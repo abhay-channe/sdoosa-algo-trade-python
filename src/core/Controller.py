@@ -3,13 +3,15 @@ import logging
 from config.Config import getBrokerAppConfig
 from models.BrokerAppDetails import BrokerAppDetails
 from loginmgmt.ZerodhaLogin import ZerodhaLogin
+from loginmgmt.AngelLogin import AngelLogin
+from pathlib import Path
 
 class Controller:
   brokerLogin = None # static variable
   brokerName = None # static variable
 
   def handleBrokerLogin(args):
-    brokerAppConfig = getBrokerAppConfig()
+    brokerAppConfig = getBrokerAppConfig(Path(__file__).parent.parent.parent)
 
     brokerAppDetails = BrokerAppDetails(brokerAppConfig['broker'])
     brokerAppDetails.setClientID(brokerAppConfig['clientID'])
@@ -21,8 +23,8 @@ class Controller:
     if Controller.brokerName == 'zerodha':
       Controller.brokerLogin = ZerodhaLogin(brokerAppDetails)
     # Other brokers - not implemented
-    #elif Controller.brokerName == 'fyers':
-      #Controller.brokerLogin = FyersLogin(brokerAppDetails)
+    elif Controller.brokerName == 'angel':
+      Controller.brokerLogin = AngelLogin(brokerAppDetails)
 
     redirectUrl = Controller.brokerLogin.login(args)
     return redirectUrl

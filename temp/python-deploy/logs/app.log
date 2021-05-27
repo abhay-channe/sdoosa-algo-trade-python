@@ -1,0 +1,61 @@
+2021-05-27 12:22:31: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:22:31: brokerAppConfig => {'broker': 'zerodha', 'clientID': 'dummy', 'appKey': 'dummy', 'appSecret': 'dummy', 'redirectUrl': 'http://localhost:8080/apis/broker/login/zerodha'}
+2021-05-27 12:22:31:  * Restarting with stat
+2021-05-27 12:22:31: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:22:31: brokerAppConfig => {'broker': 'zerodha', 'clientID': 'dummy', 'appKey': 'dummy', 'appSecret': 'dummy', 'redirectUrl': 'http://localhost:8080/apis/broker/login/zerodha'}
+2021-05-27 12:22:31:  * Debugger is active!
+2021-05-27 12:22:31:  * Debugger PIN: 287-480-365
+2021-05-27 12:22:32:  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+2021-05-27 12:22:44: 127.0.0.1 - - [27/May/2021 12:22:44] "GET / HTTP/1.1" 200 -
+2021-05-27 12:22:44: 127.0.0.1 - - [27/May/2021 12:22:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-05-27 12:22:46: 127.0.0.1 - - [27/May/2021 12:22:46] "[35m[1mGET /apis/broker/login/zerodha HTTP/1.1[0m" 500 -
+2021-05-27 12:22:46: 127.0.0.1 - - [27/May/2021 12:22:46] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-05-27 12:22:46: 127.0.0.1 - - [27/May/2021 12:22:46] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-05-27 12:22:46: 127.0.0.1 - - [27/May/2021 12:22:46] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2021-05-27 12:22:46: 127.0.0.1 - - [27/May/2021 12:22:46] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-05-27 12:22:46: 127.0.0.1 - - [27/May/2021 12:22:46] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-05-27 12:23:55:  * Detected change in 'h:\\sdoosa-algo-trade-python\\src\\core\\Controller.py', reloading
+2021-05-27 12:23:55:  * Restarting with stat
+2021-05-27 12:25:10: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:25:10: brokerAppConfig => {'broker': 'zerodha', 'clientID': 'dummy', 'appKey': 'dummy', 'appSecret': 'dummy', 'redirectUrl': 'http://localhost:8080/apis/broker/login/zerodha'}
+2021-05-27 12:25:10:  * Restarting with stat
+2021-05-27 12:25:12: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:25:12: brokerAppConfig => {'broker': 'zerodha', 'clientID': 'dummy', 'appKey': 'dummy', 'appSecret': 'dummy', 'redirectUrl': 'http://localhost:8080/apis/broker/login/zerodha'}
+2021-05-27 12:25:12:  * Debugger is active!
+2021-05-27 12:25:12:  * Debugger PIN: 287-480-365
+2021-05-27 12:25:12:  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+2021-05-27 12:25:20: 127.0.0.1 - - [27/May/2021 12:25:20] "GET / HTTP/1.1" 200 -
+2021-05-27 12:25:22: 127.0.0.1 - - [27/May/2021 12:25:22] "GET / HTTP/1.1" 200 -
+2021-05-27 12:25:23: handleBrokerLogin appKey dummy
+2021-05-27 12:25:23: ==> ZerodhaLogin .args => ImmutableMultiDict([])
+2021-05-27 12:25:23: 127.0.0.1 - - [27/May/2021 12:25:23] "[35m[1mGET /apis/broker/login/zerodha HTTP/1.1[0m" 500 -
+2021-05-27 12:25:23: 127.0.0.1 - - [27/May/2021 12:25:23] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-05-27 12:25:23: 127.0.0.1 - - [27/May/2021 12:25:23] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-05-27 12:25:23: 127.0.0.1 - - [27/May/2021 12:25:23] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2021-05-27 12:25:23: 127.0.0.1 - - [27/May/2021 12:25:23] "GET /apis/broker/login/zerodha?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-05-27 12:26:59: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:26:59: brokerAppConfig => {'broker': 'zerodha', 'clientID': 'dummy', 'appKey': 'dummy', 'appSecret': 'dummy', 'redirectUrl': 'http://localhost:8080/apis/broker/login/zerodha'}
+2021-05-27 12:26:59:  * Restarting with stat
+2021-05-27 12:27:01: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:27:01: brokerAppConfig => {'broker': 'zerodha', 'clientID': 'dummy', 'appKey': 'dummy', 'appSecret': 'dummy', 'redirectUrl': 'http://localhost:8080/apis/broker/login/zerodha'}
+2021-05-27 12:27:01:  * Debugger is active!
+2021-05-27 12:27:01:  * Debugger PIN: 287-480-365
+2021-05-27 12:27:01:  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+2021-05-27 12:27:05: 127.0.0.1 - - [27/May/2021 12:27:05] "GET / HTTP/1.1" 200 -
+2021-05-27 12:27:06: handleBrokerLogin appKey dummy
+2021-05-27 12:27:06: ==> ZerodhaLogin .args => ImmutableMultiDict([])
+2021-05-27 12:27:06: Redirecting to zerodha login url = https://kite.trade/connect/login?api_key=dummy&v=3
+2021-05-27 12:27:06: 127.0.0.1 - - [27/May/2021 12:27:06] "[32mGET /apis/broker/login/zerodha HTTP/1.1[0m" 302 -
+2021-05-27 12:27:43: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:27:43: brokerAppConfig => {'broker': 'angel', 'clientID': 'R12345', 'appKey': 'PZbaCpvq', 'appSecret': '4f5e24da-e245-4e7c-9407-36278a9a71e7', 'redirectUrl': 'http://localhost:8080/apis/broker/login/angel'}
+2021-05-27 12:27:43:  * Restarting with stat
+2021-05-27 12:27:45: serverConfig => {'port': 8080, 'enableSSL': False, 'sslPort': 8443, 'deployDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy', 'logFileDir': 'H:/sdoosa-algo-trade-python/temp/python-deploy/logs'}
+2021-05-27 12:27:45: brokerAppConfig => {'broker': 'angel', 'clientID': 'R12345', 'appKey': 'PZbaCpvq', 'appSecret': '4f5e24da-e245-4e7c-9407-36278a9a71e7', 'redirectUrl': 'http://localhost:8080/apis/broker/login/angel'}
+2021-05-27 12:27:45:  * Debugger is active!
+2021-05-27 12:27:45:  * Debugger PIN: 287-480-365
+2021-05-27 12:27:45:  * Running on http://localhost:8080/ (Press CTRL+C to quit)
+2021-05-27 12:27:47: 127.0.0.1 - - [27/May/2021 12:27:47] "GET / HTTP/1.1" 200 -
+2021-05-27 12:27:49: handleBrokerLogin appKey PZbaCpvq
+2021-05-27 12:27:49: ==> AngelLogin .args => ImmutableMultiDict([])
+2021-05-27 12:27:49: Redirecting to Angel login url = https://smartapi.angelbroking.com/publisher-login?api_key=PZbaCpvq
+2021-05-27 12:27:49: 127.0.0.1 - - [27/May/2021 12:27:49] "[32mGET /apis/broker/login/zerodha HTTP/1.1[0m" 302 -

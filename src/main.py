@@ -8,6 +8,7 @@ from restapis.BrokerLoginAPI import BrokerLoginAPI
 from restapis.StartAlgoAPI import StartAlgoAPI
 from restapis.PositionsAPI import PositionsAPI
 from restapis.HoldingsAPI import HoldingsAPI
+from pathlib import Path
 
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -23,7 +24,7 @@ def initLoggingConfg(filepath):
   logging.basicConfig(filename=filepath, format=format, level=logging.INFO, datefmt="%Y-%m-%d %H:%M:%S")
 
 # Execution starts here
-serverConfig = getServerConfig()
+serverConfig = getServerConfig(Path(__file__).parent.parent)
 
 deployDir = serverConfig['deployDir']
 if os.path.exists(deployDir) == False:
@@ -41,7 +42,7 @@ initLoggingConfg(logFileDir + "/app.log")
 
 logging.info('serverConfig => %s', serverConfig)
 
-brokerAppConfig = getBrokerAppConfig()
+brokerAppConfig = getBrokerAppConfig(Path(__file__).parent.parent)
 logging.info('brokerAppConfig => %s', brokerAppConfig)
 
 port = serverConfig['port']

@@ -1,28 +1,33 @@
 import json
 import os
+from pathlib import Path
 
-def getServerConfig():
-  with open('../config/server.json', 'r') as server:
+def getServerConfig(path):
+  filepath = 'config/server.json'
+  with open((path/filepath).resolve(), 'r') as server:
     jsonServerData = json.load(server)
     return jsonServerData
 
-def getSystemConfig():
-  with open('../config/system.json', 'r') as system:
+def getSystemConfig(path):
+  filepath = 'config/system.json'
+  with open((path/filepath).resolve(), 'r') as system:
     jsonSystemData = json.load(system)
     return jsonSystemData
 
-def getBrokerAppConfig():
-  with open('../config/brokerapp.json', 'r') as brokerapp:
+def getBrokerAppConfig(path):
+  filepath = 'config/brokerapp.json'
+  with open((path/filepath).resolve(), 'r') as brokerapp:
     jsonUserData = json.load(brokerapp)
     return jsonUserData
 
-def getHolidays():
-  with open('../config/holidays.json', 'r') as holidays:
+def getHolidays(path):
+  filepath = 'config/holidays.json'
+  with open((path/filepath).resolve(), 'r') as holidays:
     holidaysData = json.load(holidays)
     return holidaysData
 
 def getTimestampsData():
-  serverConfig = getServerConfig()
+  serverConfig = getServerConfig(Path(__file__).parent.parent)
   timestampsFilePath = os.path.join(serverConfig['deployDir'], 'timestamps.json')
   if os.path.exists(timestampsFilePath) == False:
     return {}
@@ -31,7 +36,7 @@ def getTimestampsData():
   return timestamps
 
 def saveTimestampsData(timestamps = {}):
-  serverConfig = getServerConfig()
+  serverConfig = getServerConfig(Path(__file__).parent.parent)
   timestampsFilePath = os.path.join(serverConfig['deployDir'], 'timestamps.json')
   with open(timestampsFilePath, 'w') as timestampsFile:
     json.dump(timestamps, timestampsFile, indent=2)
